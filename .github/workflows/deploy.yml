@@ -11,15 +11,16 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      
-      - name: Create site file
+      - name: Create public folder
+        run: mkdir -p public
+      - name: Write HTML file
         env:
-          SITE_HTML: ${{ github.event.inputs.site_content }}
-        run: printf '%s' "$SITE_HTML" > index.html
-      
+          SITE_CONTENT: ${{ github.event.inputs.site_content }}
+        run: |
+          node -e "require('fs').writeFileSync('public/index.html', process.env.SITE_CONTENT)"
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy . --project-name=lova-site
+          command: pages deploy public --project-name=lova-site
