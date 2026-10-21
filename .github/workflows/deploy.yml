@@ -11,8 +11,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      
       - name: Create site file
-        run: echo "${{ github.event.inputs.site_content }}" > index.html
+        env:
+          SITE_HTML: ${{ github.event.inputs.site_content }}
+        run: printf '%s' "$SITE_HTML" > index.html
+      
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
         with:
