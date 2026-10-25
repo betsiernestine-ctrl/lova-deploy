@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Miss.haircare | COSMETIQUE à DOUALA - Site Officiel</title>
-<meta name="description" content="Miss.haircare : vos cheveux votre particularité. Découvrez nos services à DOUALA.">
+<title>Miss.haircare | COSMETIQUE à DOUALA</title>
+<meta name="description" content="Miss.haircare : vos cheveux votre particularité">
 <script src="https://cdn.tailwindcss.com"></script>
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -12,192 +12,134 @@
   html { scroll-behavior: smooth; }
   body { font-family: 'Inter', sans-serif; background-color: #FAFAFA; color: #111; overflow-x: hidden; }
   .serif { font-family: 'Cormorant Garamond', serif; }
-  .glass { background: rgba(250, 250, 250, 0.85); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); }
+  .glass { background: rgba(250, 250, 250, 0.85); backdrop-filter: blur(20px); }
   [id] { scroll-margin-top: 100px; }
   .masonry { column-count: 1; column-gap: 1.5rem; }
   @media (min-width: 768px) { .masonry { column-count: 2; } }
   @media (min-width: 1024px) { .masonry { column-count: 3; } }
-  .image-hover { transition: transform 1.2s cubic-bezier(0.2, 0.8, 0.2, 1); }
-  .group:hover .image-hover { transform: scale(1.05); }
 </style>
-
-<!-- BALISAGE SEO LOCAL POUR GOOGLE -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Miss.haircare",
-  "description": "vos cheveux votre particularité",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "DOUALA",
-    "addressCountry": "CM"
-  },
-  "telephone": "237694896116",
-  "url": "https://lova-site.onrender.com/miss-haircare/"
-}
-</script>
 </head>
 <body class="antialiased selection:bg-[#166534] selection:text-white">
 
-<!-- TOP BAR -->
 <div class="bg-[#111] text-white text-center py-3 text-[10px] md:text-[11px] tracking-[0.2em] uppercase font-medium">
   <span class="opacity-70">Votre maquette exclusive est prête.</span> <a href="https://tally.so/r/RWKA9K" target="_blank" class="ml-2 border-b border-[#166534] text-[#166534] pb-0.5 hover:opacity-80 transition">Valider maintenant &rarr;</a>
 </div>
 
-<!-- HEADER -->
+<!-- HEADER : J'ai retiré la classe "uppercase" ici pour que le nom reste exact -->
 <header class="glass border-b border-black/5 px-6 md:px-12 py-5 flex justify-between items-center sticky top-0 z-50 transition-all duration-300">
   <div class="flex items-center gap-4">
-    <img src="https://i.ibb.co/PZTBLC3Y/Whats-App-Image-2026-10-23-at-12-32-38.jpg" alt="Logo Miss.haircare" class="h-10 md:h-12 w-auto object-contain">
-    <div class="serif text-2xl md:text-3xl tracking-[0.05em] font-medium uppercase text-gray-900">Miss.haircare</div>
+    <img src="https://i.ibb.co/PZTBLC3Y/Whats-App-Image-2026-10-23-at-12-32-38.jpg" alt="Logo" class="h-10 md:h-12 w-auto object-contain">
+    <div class="serif text-2xl md:text-3xl tracking-[0.05em] font-medium text-gray-900">Miss.haircare</div>
   </div>
   
   <nav class="hidden lg:flex gap-10 text-[10px] font-semibold tracking-[0.2em] text-gray-500 uppercase">
     <a href="#accueil" class="hover:text-[#166534] transition-colors">Accueil</a>
-    <a href="#portfolio" class="hover:text-[#166534] transition-colors">Portfolio</a>
-    <a href="#apropos" class="hover:text-[#166534] transition-colors">À Propos</a>
-    <a href="#contact" class="hover:text-[#166534] transition-colors">Contactez-nous</a>
+    <a href="#boutique" class="hover:text-[#166534] transition-colors">Boutique</a>
+    <a href="#realisations" class="hover:text-[#166534] transition-colors">Réalisations</a>
+    <a href="#contact" class="hover:text-[#166534] transition-colors">Contact</a>
   </nav>
   
-  <a href="https://wa.me/237694896116" target="_blank" class="text-[10px] font-bold tracking-[0.2em] bg-[#166534] text-white px-6 py-3 rounded-full hover:opacity-90 transition-all duration-300">
+  <a href="https://wa.me/237694896116" target="_blank" class="text-[10px] font-bold tracking-[0.2em] bg-[#166534] text-white px-6 py-3 rounded-full hover:scale-105 transition-transform duration-300 shadow-lg">
     RÉSERVER
   </a>
 </header>
 
-<!-- HERO -->
 <main id="accueil" class="max-w-[1400px] mx-auto px-6 md:px-12 pt-16 pb-24">
-  <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+  <!-- HERO : J'ai retiré "uppercase" si jamais il y était -->
+  <div class="text-center max-w-4xl mx-auto mb-20" data-aos="fade-down">
+    <div class="inline-flex items-center justify-center gap-2 mb-6">
+      <span class="w-8 h-[2px] bg-[#166534]"></span>
+      <span class="text-[10px] font-bold tracking-[0.2em] uppercase text-gray-500">DOUALA</span>
+      <span class="w-8 h-[2px] bg-[#166534]"></span>
+    </div>
+    <h1 class="serif text-5xl md:text-7xl leading-[1.05] tracking-tight text-gray-900 mb-6">Miss.haircare - Expertise Cosmétique à Douala</h1>
+    <p class="text-[15px] md:text-lg text-gray-500 font-light leading-relaxed max-w-2xl mx-auto">vos cheveux votre particularité</p>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto mb-20">
+    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 text-center" data-aos="fade-up">
+      <h3 class="serif text-2xl text-gray-900 mb-4">Produits 100% Naturels</h3>
+      <p class="text-gray-600 font-light leading-relaxed text-[15px]">
+        Produits essentiellement naturels conçus à base de plantes, d'huiles et de poudres idéales pour des cheveux afro texturés et défrisés.
+      </p>
+    </div>
+    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 text-center" data-aos="fade-up" data-aos-delay="100">
+      <h3 class="serif text-2xl text-gray-900 mb-4">Traitements Capillaires</h3>
+      <p class="text-gray-600 font-light leading-relaxed text-[15px]">
+        Des traitements capillaires excellents qui nourrissent et hydratent en profondeur pour des cheveux soyeux et en bonne santé.
+      </p>
+    </div>
+  </div>
+
+  
+  <div id="boutique" class="mt-32" data-aos="fade-up">
+    <div class="text-center mb-16">
+      <span class="text-[#166534] text-[11px] font-bold tracking-[0.2em] uppercase block mb-3">Notre Boutique</span>
+      <h2 class="serif text-4xl md:text-6xl text-gray-900">Nos Produits</h2>
+    </div>
     
-    <div class="lg:col-span-5 order-2 lg:order-1 flex flex-col justify-center" data-aos="fade-right">
-      <div class="inline-flex items-center gap-2 mb-6">
-        <span class="w-8 h-[2px] bg-[#166534]"></span>
-        <span class="text-[10px] font-bold tracking-[0.2em] uppercase text-gray-500">DOUALA</span>
-      </div>
-      <h1 class="serif text-5xl md:text-7xl leading-[1.05] tracking-tight text-gray-900 mb-6">Miss.haircare – Cosmétique à Douala</h1>
-      <p class="text-[15px] text-gray-500 font-light leading-relaxed mb-10 max-w-md">vos cheveux votre particularité</p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
       
-      <div class="flex flex-wrap gap-4">
-        <a href="#portfolio" class="bg-[#111] text-white px-8 py-4 text-[10px] font-bold tracking-[0.2em] uppercase hover:bg-[#166534] transition-colors duration-300">
-          Découvrir
-        </a>
-        <a href="#contact" class="border border-gray-300 text-gray-800 px-8 py-4 text-[10px] font-bold tracking-[0.2em] uppercase hover:border-[#166534] hover:text-[#166534] transition-colors duration-300">
-          Contact
-        </a>
-      </div>
-    </div>
-
-    <div class="lg:col-span-7 order-1 lg:order-2" data-aos="fade-left" data-aos-delay="200">
-      <div class="relative w-full aspect-[4/3] md:aspect-[16/10] overflow-hidden group rounded-sm shadow-xl">
-        <img src="https://i.ibb.co/Ndv4T0Gg/Whats-App-Image-2026-10-25-at-19-38-17.jpg" alt="Miss.haircare à DOUALA" class="w-full h-full object-cover image-hover">
-        <div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-700"></div>
-      </div>
-    </div>
-  </div>
-
-  <div class="mt-32" data-aos="fade-up">
-    <div class="flex flex-col md:flex-row justify-between items-end mb-12 border-b border-black/10 pb-6">
-      <h2 class="serif text-4xl md:text-5xl text-gray-900">Nos Spécialités</h2>
-    </div>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <div class="group bg-white p-8 border border-black/5 hover:border-[#166534] transition-colors duration-500 rounded-sm shadow-sm">
-            <div class="text-[#166534] text-[11px] font-bold tracking-[0.2em] mb-4">01</div>
-            <div class="serif text-2xl text-gray-900 mb-3">Qui nous sommes</div>
-            <p class="text-[13px] text-gray-500 font-light leading-relaxed mb-6">Une approche sur-mesure et une exécution parfaite pour chacun de vos besoins.</p>
-          </div><div class="group bg-white p-8 border border-black/5 hover:border-[#166534] transition-colors duration-500 rounded-sm shadow-sm">
-            <div class="text-[#166534] text-[11px] font-bold tracking-[0.2em] mb-4">02</div>
-            <div class="serif text-2xl text-gray-900 mb-3">Nos valeurs</div>
-            <p class="text-[13px] text-gray-500 font-light leading-relaxed mb-6">Une approche sur-mesure et une exécution parfaite pour chacun de vos besoins.</p>
-          </div><div class="group bg-white p-8 border border-black/5 hover:border-[#166534] transition-colors duration-500 rounded-sm shadow-sm">
-            <div class="text-[#166534] text-[11px] font-bold tracking-[0.2em] mb-4">03</div>
-            <div class="serif text-2xl text-gray-900 mb-3">Nos atouts</div>
-            <p class="text-[13px] text-gray-500 font-light leading-relaxed mb-6">Une approche sur-mesure et une exécution parfaite pour chacun de vos besoins.</p>
+        <div class="group bg-white rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 overflow-hidden border border-gray-100" data-aos="fade-up" data-aos-delay="100">
+          <div class="w-full aspect-square overflow-hidden bg-gray-50">
+            <img src="https://i.ibb.co/Ndv4T0Gg/Whats-App-Image-2026-10-25-at-19-38-17.jpg" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 cursor-zoom-in lightbox-trigger" alt="Shampoing">
           </div>
+          <div class="p-6 text-center">
+            <h3 class="text-sm font-semibold tracking-widest text-gray-500 uppercase mb-2">Shampoing</h3>
+            <div class="text-2xl font-bold text-[#166534]">3000 FCFA Crème</div>
+          </div>
+        </div>
+    </div>
+    
+    <div class="max-w-2xl mx-auto mt-10">
+      
     </div>
   </div>
 
-  <div id="portfolio" class="mt-32" data-aos="fade-up">
+  
+  <div id="realisations" class="mt-32" data-aos="fade-up">
     <div class="text-center mb-16">
       <span class="text-[#166534] text-[11px] font-bold tracking-[0.2em] uppercase block mb-3">Portfolio</span>
       <h2 class="serif text-4xl md:text-6xl text-gray-900">Nos Réalisations</h2>
     </div>
     <div class="masonry">
-      <div class="group relative overflow-hidden break-inside-avoid mb-4 md:mb-6 rounded-sm cursor-pointer" data-aos="fade-up" data-aos-delay="0">
-            <img src="https://i.ibb.co/Qjp5KvRr/Whats-App-Image-2026-10-23-at-12-32-38-2.jpg" loading="lazy" alt="Portfolio 1" class="w-full h-auto object-cover transition-transform duration-[1.2s] ease-out group-hover:scale-105">
-            <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
-               <div class="translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                 <span class="text-white text-[10px] tracking-[0.2em] uppercase font-semibold border-b border-white/50 pb-1">Découvrir</span>
-               </div>
-            </div>
-          </div><div class="group relative overflow-hidden break-inside-avoid mb-4 md:mb-6 rounded-sm cursor-pointer" data-aos="fade-up" data-aos-delay="100">
-            <img src="https://i.ibb.co/s9Dd3yn2/Whats-App-Image-2026-10-23-at-12-32-38-3.jpg" loading="lazy" alt="Portfolio 2" class="w-full h-auto object-cover transition-transform duration-[1.2s] ease-out group-hover:scale-105">
-            <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
-               <div class="translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                 <span class="text-white text-[10px] tracking-[0.2em] uppercase font-semibold border-b border-white/50 pb-1">Découvrir</span>
-               </div>
-            </div>
-          </div><div class="group relative overflow-hidden break-inside-avoid mb-4 md:mb-6 rounded-sm cursor-pointer" data-aos="fade-up" data-aos-delay="200">
-            <img src="https://i.ibb.co/tMY19QRh/Whats-App-Image-2026-10-25-at-19-38-17-1.jpg" loading="lazy" alt="Portfolio 3" class="w-full h-auto object-cover transition-transform duration-[1.2s] ease-out group-hover:scale-105">
-            <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
-               <div class="translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                 <span class="text-white text-[10px] tracking-[0.2em] uppercase font-semibold border-b border-white/50 pb-1">Découvrir</span>
-               </div>
-            </div>
-          </div><div class="group relative overflow-hidden break-inside-avoid mb-4 md:mb-6 rounded-sm cursor-pointer" data-aos="fade-up" data-aos-delay="300">
-            <img src="https://i.ibb.co/Nn69gX4H/Whats-App-Image-2026-10-25-at-19-38-18.jpg" loading="lazy" alt="Portfolio 4" class="w-full h-auto object-cover transition-transform duration-[1.2s] ease-out group-hover:scale-105">
-            <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
-               <div class="translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                 <span class="text-white text-[10px] tracking-[0.2em] uppercase font-semibold border-b border-white/50 pb-1">Découvrir</span>
-               </div>
-            </div>
-          </div><div class="group relative overflow-hidden break-inside-avoid mb-4 md:mb-6 rounded-sm cursor-pointer" data-aos="fade-up" data-aos-delay="0">
-            <img src="https://i.ibb.co/S4bzymwN/Whats-App-Image-2026-10-25-at-19-38-16.jpg" loading="lazy" alt="Portfolio 5" class="w-full h-auto object-cover transition-transform duration-[1.2s] ease-out group-hover:scale-105">
-            <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
-               <div class="translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                 <span class="text-white text-[10px] tracking-[0.2em] uppercase font-semibold border-b border-white/50 pb-1">Découvrir</span>
-               </div>
-            </div>
-          </div><div class="group relative overflow-hidden break-inside-avoid mb-4 md:mb-6 rounded-sm cursor-pointer" data-aos="fade-up" data-aos-delay="100">
-            <img src="https://i.ibb.co/1ttJN9PJ/Whats-App-Image-2026-10-25-at-19-38-18-1.jpg" loading="lazy" alt="Portfolio 6" class="w-full h-auto object-cover transition-transform duration-[1.2s] ease-out group-hover:scale-105">
-            <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
-               <div class="translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                 <span class="text-white text-[10px] tracking-[0.2em] uppercase font-semibold border-b border-white/50 pb-1">Découvrir</span>
-               </div>
-            </div>
+      <div class="group relative overflow-hidden break-inside-avoid mb-4 md:mb-6 rounded-lg cursor-pointer shadow-sm hover:shadow-xl transition-all duration-500" data-aos="zoom-in-up" data-aos-delay="0">
+            <img src="https://i.ibb.co/tMY19QRh/Whats-App-Image-2026-10-25-at-19-38-17-1.jpg" loading="lazy" alt="Réalisation 1" class="w-full h-auto object-cover transition-transform duration-[1.2s] ease-out group-hover:scale-110 cursor-zoom-in lightbox-trigger">
+          </div><div class="group relative overflow-hidden break-inside-avoid mb-4 md:mb-6 rounded-lg cursor-pointer shadow-sm hover:shadow-xl transition-all duration-500" data-aos="zoom-in-up" data-aos-delay="100">
+            <img src="https://i.ibb.co/Nn69gX4H/Whats-App-Image-2026-10-25-at-19-38-18.jpg" loading="lazy" alt="Réalisation 2" class="w-full h-auto object-cover transition-transform duration-[1.2s] ease-out group-hover:scale-110 cursor-zoom-in lightbox-trigger">
+          </div><div class="group relative overflow-hidden break-inside-avoid mb-4 md:mb-6 rounded-lg cursor-pointer shadow-sm hover:shadow-xl transition-all duration-500" data-aos="zoom-in-up" data-aos-delay="200">
+            <img src="https://i.ibb.co/S4bzymwN/Whats-App-Image-2026-10-25-at-19-38-16.jpg" loading="lazy" alt="Réalisation 3" class="w-full h-auto object-cover transition-transform duration-[1.2s] ease-out group-hover:scale-110 cursor-zoom-in lightbox-trigger">
+          </div><div class="group relative overflow-hidden break-inside-avoid mb-4 md:mb-6 rounded-lg cursor-pointer shadow-sm hover:shadow-xl transition-all duration-500" data-aos="zoom-in-up" data-aos-delay="300">
+            <img src="https://i.ibb.co/1ttJN9PJ/Whats-App-Image-2026-10-25-at-19-38-18-1.jpg" loading="lazy" alt="Réalisation 4" class="w-full h-auto object-cover transition-transform duration-[1.2s] ease-out group-hover:scale-110 cursor-zoom-in lightbox-trigger">
           </div>
     </div>
   </div>
 
   <div id="apropos" class="mt-32 max-w-4xl mx-auto text-center" data-aos="fade-up">
-    <span class="text-[#166534] text-[11px] font-bold tracking-[0.2em] uppercase block mb-4">Notre approche</span>
-    <h2 class="serif text-4xl md:text-5xl text-gray-900 mb-8">À Propos</h2>
-    <p class="text-lg md:text-2xl serif italic text-gray-500 leading-relaxed font-light">"Miss.haircare, entreprise de cosmétique située à Douala, offre des solutions de soin et de beauté adaptées à vos besoins."</p>
+    <span class="text-[#166534] text-[11px] font-bold tracking-[0.2em] uppercase block mb-4">Qui sommes-nous ?</span>
+    <h2 class="serif text-4xl md:text-5xl text-gray-900 mb-8">Notre Vision</h2>
+    <p class="text-lg md:text-2xl serif italic text-gray-500 leading-relaxed font-light">"Miss.haircare est une entreprise spécialisée dans les soins cosmétiques située à Douala. Nous proposons des services de coiffure et de soins capillaires de qualité pour répondre aux attentes de nos clients."</p>
   </div>
 
-  <div id="contact" class="mt-32 bg-[#111] text-white p-10 md:p-20 relative overflow-hidden rounded-sm" data-aos="fade-up">
+  <div id="contact" class="mt-32 bg-[#111] text-white p-10 md:p-20 relative overflow-hidden rounded-2xl" data-aos="zoom-in-up">
     <div class="absolute -top-40 -right-40 w-96 h-96 bg-[#166534] rounded-full blur-[150px] opacity-20 pointer-events-none"></div>
-    
     <div class="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-16 items-center max-w-5xl mx-auto">
       <div>
-        <h2 class="serif text-4xl md:text-6xl mb-6 leading-tight">Travaillons ensemble.</h2>
-        <p class="text-gray-400 font-light mb-10 text-[15px]">Discutons de vos besoins. Validez votre maquette ou contactez-nous pour lancer la mise en ligne.</p>
-        
+        <h2 class="serif text-4xl md:text-6xl mb-6 leading-tight">Commandez maintenant.</h2>
+        <p class="text-gray-400 font-light mb-10 text-[15px]">Contactez-nous sur WhatsApp pour passer commande ou valider votre maquette.</p>
         <div class="flex flex-col sm:flex-row gap-4">
-          <a href="https://wa.me/237694896116" target="_blank" class="bg-[#166534] text-[#111] px-8 py-4 text-[10px] font-bold tracking-[0.2em] uppercase hover:bg-white transition-colors text-center rounded-sm">
+          <a href="https://wa.me/237694896116" target="_blank" class="bg-[#166534] text-[#111] px-8 py-4 text-[10px] font-bold tracking-[0.2em] uppercase hover:bg-white transition-colors text-center rounded-full">
             WhatsApp
           </a>
-          <a href="mailto:betsiernestine@gmail.com" class="border border-white/20 text-white px-8 py-4 text-[10px] font-bold tracking-[0.2em] uppercase hover:bg-white hover:text-[#111] transition-colors text-center rounded-sm">
+          <a href="mailto:betsiernestine@gmail.com" class="border border-white/20 text-white px-8 py-4 text-[10px] font-bold tracking-[0.2em] uppercase hover:bg-white hover:text-[#111] transition-colors text-center rounded-full">
             Email
           </a>
         </div>
       </div>
-
-      <div class="bg-white/5 border border-white/10 p-8 backdrop-blur-md rounded-sm">
-        <div class="w-12 h-12 bg-[#166534] rounded-full flex items-center justify-center mb-6">
-          <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-        </div>
+      <div class="bg-white/5 border border-white/10 p-8 backdrop-blur-md rounded-xl">
         <h3 class="serif text-2xl mb-3 text-white">Cette maquette vous plaît ?</h3>
-        <p class="text-[13px] text-gray-400 mb-8 font-light leading-relaxed">Cliquez ci-dessous pour valider le design et nous donner le feu vert pour la production.</p>
-        <a href="https://tally.so/r/RWKA9K" target="_blank" class="block w-full bg-white text-[#111] py-4 text-center text-[10px] font-bold tracking-[0.2em] uppercase hover:bg-[#166534] hover:text-white transition-colors rounded-sm">
+        <p class="text-[13px] text-gray-400 mb-8 font-light">Cliquez ci-dessous pour valider le design.</p>
+        <a href="https://tally.so/r/RWKA9K" target="_blank" class="block w-full bg-white text-[#111] py-4 text-center text-[10px] font-bold tracking-[0.2em] uppercase hover:bg-[#166534] transition-colors rounded-full">
           Je valide la maquette &rarr;
         </a>
       </div>
@@ -211,7 +153,7 @@
 
 <div class="fixed bottom-0 left-0 w-full bg-white border-t border-gray-200 shadow-[0_-10px_30px_rgba(0,0,0,0.05)] z-50 px-4 py-4 flex justify-between items-center md:hidden">
   <div class="text-[11px] font-bold text-gray-900 uppercase tracking-widest">Maquette Prête</div>
-  <a href="https://tally.so/r/RWKA9K" target="_blank" class="bg-[#166534] text-white px-6 py-3 text-[10px] font-bold tracking-widest uppercase rounded-sm">
+  <a href="https://tally.so/r/RWKA9K" target="_blank" class="bg-[#166534] text-white px-6 py-3 text-[10px] font-bold tracking-widest uppercase rounded-full">
     Valider
   </a>
 </div>
@@ -220,7 +162,57 @@
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="group-hover:rotate-12 transition-transform"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
 </a>
 
+<!-- LIGHTBOX -->
+<div id="lightbox" class="fixed inset-0 z-[100] bg-black/90 hidden items-center justify-center p-4 opacity-0 transition-opacity duration-300">
+    <button id="close-lightbox" class="absolute top-6 right-6 text-white text-5xl leading-none hover:text-gray-300 z-[110]">&times;</button>
+    <img id="lightbox-img" src="" class="max-w-full max-h-[90vh] object-contain rounded-lg shadow-2xl transform scale-95 transition-transform duration-300" alt="Zoom">
+</div>
+
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>AOS.init({ duration: 1000, once: true });</script>
+<script>
+  AOS.init({ duration: 1000, once: true, offset: 50 });
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const closeBtn = document.getElementById('close-lightbox');
+    const triggers = document.querySelectorAll('.lightbox-trigger');
+
+    const openLightbox = (src) => {
+      lightboxImg.src = src;
+      lightbox.classList.remove('hidden');
+      setTimeout(() => {
+        lightbox.classList.remove('opacity-0');
+        lightboxImg.classList.remove('scale-95');
+        lightboxImg.classList.add('scale-100');
+      }, 10);
+    };
+
+    const closeLightbox = () => {
+      lightbox.classList.add('opacity-0');
+      lightboxImg.classList.remove('scale-100');
+      lightboxImg.classList.add('scale-95');
+      setTimeout(() => {
+        lightbox.classList.add('hidden');
+      }, 300);
+    };
+
+    triggers.forEach(img => {
+      img.addEventListener('click', () => openLightbox(img.src));
+    });
+
+    closeBtn.addEventListener('click', closeLightbox);
+    
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) closeLightbox();
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !lightbox.classList.contains('hidden')) {
+        closeLightbox();
+      }
+    });
+  });
+</script>
 </body>
 </html>
